@@ -1,6 +1,6 @@
 package comp125;
 
-public class LectureOne {
+public class Week4LectureOne {
 
 	/**
 	 * @param args

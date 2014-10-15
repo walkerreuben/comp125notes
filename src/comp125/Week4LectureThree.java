@@ -1,6 +1,6 @@
 package comp125;
 
-public class LectureThree {
+public class Week4LectureThree {
 	
 	public static void main(String[] args) {
 		
