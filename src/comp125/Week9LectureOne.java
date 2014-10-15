@@ -43,17 +43,17 @@ public class Week9LectureOne {
 
 	public static boolean binarySearchRec(int[] ii, int t, int start, int end) {
 		if (end >= ii.length)
-			end = ii.length-1;
-		
+			end = ii.length - 1;
+
 		// Calculate the mid point.
 		int mid = start + (end - start) / 2;
 
-		//Ensure mid point is inside array.
+		// Ensure mid point is inside array.
 		if (mid < 0)
 			mid = 0;
 		else if (mid >= ii.length)
-			mid = ii.length-1;
-		
+			mid = ii.length - 1;
+
 		// Check the mid point.
 		if (ii[mid] == t)
 			return true;
@@ -99,7 +99,21 @@ public class Week9LectureOne {
 		 * 
 		 * a recursive call
 		 * 
-		 * A recursive binary search is very much how you would explain the process of binary search to someone.
+		 * A recursive binary search is very much how you would explain the
+		 * process of binary search to someone.
+		 * 
+		 * 
+		 * Recursive data types
+		 * 
+		 * We can find recursion in data structures too
+		 * 
+		 * Objects that contain references to other objects of the same type.
+		 * 
+		 * What happens if you are your own parent? Infinite loop.
+		 * 
+		 * How can you guard against this? We can check against this for your
+		 * own parents, but it's more difficult for your grandparents and
+		 * further back.
 		 */
 
 		System.out.println(sumOfIntRec(5));
@@ -113,7 +127,22 @@ public class Week9LectureOne {
 
 		int[] ii = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-		System.out.println(binarySearchRec(ii, 10, 0, ii.length-1));
+		System.out.println(binarySearchRec(ii, 10, 0, ii.length - 1));
 		System.out.println(binarySearchRec(ii, 9, 0, 500000));
+
+		Person me = new Person("Reuben", "Walker");
+		Person mum = new Person("Deborah", "Partridge");
+		Person dad = new Person("Timothy", "Walker");
+
+		me.setFather(dad);
+		me.setMother(mum);
+
+		dad.setFather(new Person("David", "Walker"));
+		dad.setMother(new Person("Ivy", "Shaw"));
+
+		mum.setFather(new Person("Ian", "Partridge"));
+		mum.setMother(new Person("Beverly", "Newcombe"));
+
+		me.printTree("");
 	}
 }
