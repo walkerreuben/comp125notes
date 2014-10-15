@@ -144,5 +144,7 @@ public class Week9LectureOne {
 		mum.setMother(new Person("Beverly", "Newcombe"));
 
 		me.printTree("");
+		
+		Hanoi.move(3, 1, 2, 3);
 	}
 }
