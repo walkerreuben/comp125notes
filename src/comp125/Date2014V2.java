@@ -26,7 +26,7 @@ public class Date2014V2 {
 			System.out.println(" is not a date in 2014");
 	}
 
-	private boolean isValid() {
+	public boolean isValid() {
 		if (month < 0 || month > 12) 									// Check if it's a valid month.
 			return false;
 		if (day < 1 || day > 31) 										// If day is greater or less than any possible date. Covers 31 day months.
@@ -36,5 +36,18 @@ public class Date2014V2 {
 		if (month == 4 || month == 6 || month == 9 || month == 11) 		// If month has 30 days
 			return day <= 30;											// If valid day, return true, otherwise false.
 		return true;
+	}
+	
+	/**
+	 * Returns number of days in given month.
+	 */
+	public static int numDays(int aMonth) {
+		if (aMonth < 1 || aMonth > 12)
+			return 0;
+		if (aMonth == 2)
+			return 28;
+		if (aMonth == 4 || aMonth == 6 || aMonth == 9 || aMonth == 11)
+			return 30;
+		return 31;	
 	}
 }
