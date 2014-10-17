@@ -61,6 +61,13 @@ public class Expression {
 		return result;
 	}
 
+	/**
+	 * Takes an expression and applies the operator to the two sides.
+	 * @param lval left side sub-expression
+	 * @param rval right side sub-expression
+	 * @return the value of the expression after evaluation.
+	 * @throws Exception when the operator isn't a valid operator.
+	 */
 	public int applyOperator(int lval, int rval) throws Exception {
 		int result = 0;
 		if (operator == "+")
