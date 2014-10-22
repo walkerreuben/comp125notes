@@ -103,14 +103,13 @@ public class Week10LectureOne {
 		 * A linked list can be seen as a collection of nodes.
 		 */
 
-        /*
-        What happens to a node that has been deleted? It stays there until the automatic garbage collection comes along and cleans it up.
-
-        Because no variable has a reference to it, the garbage collection deletes it.
-
-
-         */
-
+		/*
+		 * What happens to a node that has been deleted? It stays there until
+		 * the automatic garbage collection comes along and cleans it up.
+		 * 
+		 * Because no variable has a reference to it, the garbage collection
+		 * deletes it.
+		 */
 
 	}
 
@@ -132,8 +131,8 @@ public class Week10LectureOne {
 		 * the list.
 		 */
 
-        public int getInfo() {
-            return info;
-        }
+		public int getInfo() {
+			return info;
+		}
 	}
 }
