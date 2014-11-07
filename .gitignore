@@ -1,7 +1,6 @@
 bin/
-week11lectureone.pdf
-week11lectureone.aux
-week11lectureone.bbl
-week11lectureone.blg
-week11lectureone.log
-week11lectureone.synctex.gz
+*.aux
+*.bbl
+*.blg
+*.log
+*.synctex.gz
